@@ -1,0 +1,94 @@
+/* 引入 weui 组件 */
+@import './miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss';
+
+page {
+  --footer-height: 10vh;
+  --button-size: 16vw;
+  --button-color: #353535;
+  --button-icon-size: 6vw;
+}
+
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+button {
+  background: initial;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button::after {
+  border: none;
+}
+
+.page{
+  background-color:  #7e7b7b;
+}
+.line{
+  width: 100%;
+  height: 5rpx;
+  background-color: #bebcbc;
+  margin-top: 10rpx;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: scroll;
+}
+.title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 45rpx;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+}
+/* 模拟tabbar部分 */
+.tabbar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 120rpx;
+  border-top: 1px solid rgb(206, 206, 206);
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+.sbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: space-evenly;
+  width: 33%;
+  height: 120rpx;
+  /* background-color: pink; */
+  margin-top: 10rpx;
+}
+.sbox .font {
+  font-size: 25rpx;
+}
+
+.sbox .img {
+  width: 80rpx;
+  height: 80rpx;
+}

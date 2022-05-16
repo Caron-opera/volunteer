@@ -1,0 +1,32 @@
+<!-- 搜索框 -->
+<view class="search">
+ <view class="search_input">
+     <input placeholder="请输入要搜索的模块"></input>
+     <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/search_black.png"></image>
+  </view>
+</view>
+
+<!-- 活动列表 -->
+<view class="act_bigbox">
+   <block wx:for="{{activity}}" wx:key="_id">
+    <navigator class="activity_box" url="../activity_detail/activity_detail?id={{item._id}}"> 
+      <view class="top">
+        <view class="left">
+          <image src="{{item.src}}"></image>
+        </view>
+        <view class="right">
+          <view>{{item.name}}</view>
+          <view class="state">{{item.state}}</view>
+          <view>报名时间:{{item.start_signtime}}至{{item.end_signtime}}</view>
+          <view>活动时间:{{item.start_time}}至{{item.end_time}}</view>
+        </view>
+      </view>
+      <view class="bottom">
+       <view class="sign_num">{{item.num}}人报名/限{{item.all_num}}</view>
+      </view>
+    </navigator>
+   </block>
+</view>
+
+<!-- 底座 -->
+<view class="base">没有了，已经到底了</view>

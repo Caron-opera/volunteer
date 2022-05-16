@@ -1,0 +1,62 @@
+.page{
+  background-color:  #7e7b7b;
+}
+.line{
+  width: 100%;
+  height: 5rpx;
+  background-color: #bebcbc;
+  margin-top: 10rpx;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.pic_box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: white;
+}
+.pic_box .pic {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  /* background-color: green; */
+  height: 160rpx;
+}
+.pic_box .pic image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 10rpx;
+}
+.pic_box .icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  /* background-color: pink; */
+}
+.pic_box .icon image {
+  width: 80rpx;
+  height: 80rpx;
+}
+.nickname {
+  background-color: white;
+}
+.age {
+  background-color: #fff;
+}
+.phone {
+  background-color: #fff;
+}
+.skill {
+  background-color: #fff;
+}
+.line {
+  background-color: #fff;
+}
+button {
+  margin-top: 100rpx;
+}

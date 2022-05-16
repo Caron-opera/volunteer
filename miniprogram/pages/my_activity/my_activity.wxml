@@ -1,0 +1,22 @@
+<view class="title">活动信息</view>
+
+<!-- 活动列表 -->
+<view class="act_bigbox">
+   <block wx:for="{{activity}}" wx:key="_id">
+    <navigator class="activity_box" url="../activity_detail/activity_detail?id={{item._id}}"> 
+      <view class="top">
+        <view class="left">
+          <image src="{{item.src}}"></image>
+        </view>
+        <view class="right">
+          <view>{{item.name}}</view>
+          <view class="state">{{item.situation}}</view>
+          <view>地点：{{item.site}}</view>
+        </view>
+      </view>
+    </navigator>
+   </block>
+</view>
+
+<!-- 底座 -->
+<view class="base">没有了，已经到底了</view>

@@ -1,0 +1,76 @@
+<!-- 搜索框 -->
+<view class="search">
+ <view class="search_input">
+     <input placeholder="请输入要搜索的模块" bindconfirm="search" confirm-type="done"></input>
+     <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/search_black.png"></image>
+  </view>
+</view>
+
+<!-- 轮播图_新闻 -->
+<view class="banner">
+    <swiper class="lunbo" autoplay="true" interval="2000">
+     <swiper-item wx:for="{{news}}" wx:key="_id">
+       <image src="{{item.src}}" class="swiper_img"></image>
+     </swiper-item>
+  </swiper>
+</view>
+
+<!-- 分类栏 -->
+ <view class="volunterr_function">
+     <navigator class="function_module" url="../white/white" >
+       <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/明星活动.png"></image>
+       <view>活动列表</view>
+     </navigator>
+
+     <navigator class="function_module" url="../white/white" >
+       <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/课程管理_m.png"></image>
+       <view>技能培训</view>
+     </navigator>
+
+     <navigator class="function_module" url="../white/white" >
+       <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/岗位补贴.png"></image>
+       <view>志愿津贴</view>
+     </navigator>
+
+     <navigator class="function_module" url="../white/white">
+       <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/问卷答案.png"></image>
+       <view>问卷调查</view>
+     </navigator>
+ </view>
+
+
+<!-- 公告 -->
+<view class="box">
+   <view class="mess">
+    <view class="title_box">
+      <view>紧急通知</view>
+      <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/喇叭.png" style="width: 50rpx;height: 50rpx;"></image>
+    </view>
+    <view class="content">自4月26日以来有郑州市、广东白云区、上海等中高风险区旅游史的相关人员尽快上报社区。</view>
+   </view>
+</view>
+
+<!-- 推荐 -->
+<view class="act_bigbox">
+   <block wx:for="{{activity}}" wx:key="_id">
+    <navigator class="activity_box" url="../activity_detail/activity_detail?id={{item._id}}"> 
+      <view class="top">
+        <view class="left">
+          <image src="{{item.src}}"></image>
+        </view>
+        <view class="right">
+          <view>{{item.name}}</view>
+          <view class="state">{{item.state}}</view>
+          <view>报名时间:{{item.start_signtime}}至{{item.end_signtime}}</view>
+          <view>活动时间:{{item.start_time}}至{{item.end_time}}</view>
+        </view>
+      </view>
+      <view class="bottom">
+       <view class="sign_num">{{item.num}}/{{item.all_num}}</view>
+      </view>
+    </navigator>
+   </block>
+</view>
+
+<!-- 底座 -->
+ <view class="base">没有了，已经到底了</view>

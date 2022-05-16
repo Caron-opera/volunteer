@@ -1,0 +1,21 @@
+<view class="title">任务列表</view>
+<!-- 任务列表 -->
+<view class="box">
+  <view class="task_list">
+   <block wx:for="{{tasklist}}" wx:key="_id">
+      <view class="task_box">
+         <view class="left">
+            <view>任务内容：</view>
+            <view class="content">{{item.content}}</view>
+            <view>执行人：{{item.nickname}}</view>
+            <view>联系方式：{{item.phone}}</view>
+            <view>执行情况：{{item.task_situation}}</view>
+         </view>
+         <view class="right">
+          <button  bindtap="delete" data-id="{{item._id}}">删除任务</button>
+         </view>
+      </view>
+   </block>
+  </view>
+</view>
+

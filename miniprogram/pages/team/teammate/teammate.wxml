@@ -1,0 +1,37 @@
+<view class="title">活动申请通知</view>
+<scroll-view scroll-y="true">
+<view class="box">
+<view class="mess_box">
+  <block wx:for="{{message}}" wx:key="{{_id}}" wx:if="{{item.situation=='审核中'}}">
+     <view class="mess">
+      <view class="top">
+        <text class="info-name" decode="true">{{item.nickname}}&ensp;&ensp;申请加入</text>
+        <view>{{item.name}}</view>
+        <view>此时状态为：{{item.situation}}</view>
+      </view>
+      <view class="bottom">
+         <view class="aton" bindtap="agree" data-activity_id="{{item.activity_id}}" data-volunteer_openid="{{item.volunteer_openid}}">同意</view>
+         <view class="rton" bindtap="refuse" data-activity_id="{{item.activity_id}}" data-volunteer_openid="{{item.volunteer_openid}}">拒绝</view>
+      </view>
+     </view>
+  </block>
+</view>
+</view>
+</scroll-view>
+<!-- 模拟tabbar部分 -->
+<view class="tabbar">
+   <view class="sbox" bindtap="navToassign">
+    <image class="img" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/tabbar/team/活动管理灰.png"></image>
+    <view class="font">活动管理</view>
+   </view>
+
+    <view class="sbox" bindtap="navTomate">
+      <image class="img" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/tabbar/team/人员管理紫.png"></image>
+      <view class="font">人员管理</view>
+    </view>
+
+    <view class="sbox" bindtap="navToteam">
+      <image class="img" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/tabbar/team/团队管理灰.png"></image>
+      <view class="font">团队中心</view>
+    </view>
+</view>

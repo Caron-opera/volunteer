@@ -1,0 +1,19 @@
+.title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 45rpx;
+  width: 100%;
+  background-color: #fff;
+}
+.activity_name{
+  font-size: 40rpx;
+  margin: 20rpx 0;
+}
+.ac{
+  color: rgb(206, 125, 125);
+  font-size: 38rpx;
+}
+button {
+  margin-top: 40rpx;
+}

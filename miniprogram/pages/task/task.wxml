@@ -1,0 +1,21 @@
+<view class="title">任务列表</view>
+
+<view class="line"></view>
+<!-- 任务列表 -->
+<view class="task_box">
+  <block wx:for="{{task}}" wx:key="_id">
+    <view class="task">
+     <view class="basic">
+        <view>活动名:</view>
+        <view class="name">{{item.name}}</view>
+        <view>任务：</view>
+        <view class="content">{{item.content}}</view>
+        <view>负责团队：{{item.team}}</view>
+     </view>
+     <view class="act_box">
+      <view class="act" bindtap="finish" data-id="{{item._id}} ">点击完成</view>
+     </view>
+    </view>
+   <view class="line"></view>
+  </block>
+</view>

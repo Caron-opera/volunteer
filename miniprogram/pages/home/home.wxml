@@ -1,0 +1,92 @@
+<!-- 个人基本情况 -->
+<view class="mess">
+  <view class="left">
+    <image src="{{avatarurl}}" style="width: 160rpx;height: 160rpx;border-radius: 80rpx;"></image>
+  </view>
+  <view class="right">
+    <view class="basic">
+      <view>{{nickname}}</view>
+      <view>{{age}}岁</view>
+    <view class="skill_box">
+      <block wx:for="{{skill}}" wx:key="index">
+      <view class="skill">{{item}}</view>
+    </block>
+  </view>
+  </view>
+</view>
+<view class="repair">
+    <navigator  url="../repair/repair">
+   <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/修改.png" style="width: 80rpx;height: 80rpx;"></image>
+  </navigator>
+  </view>
+</view>
+
+<!-- 活动统计 -->
+<view class="statistics_box">
+<view class="statistics">
+   <view class="figure">
+   <view class="box">
+    <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/报名.png" style="width:140rpx;height: 140rpx;"></image>
+   </view>
+   <view class="state">已报名</view>
+   <view class="num">11</view>
+   </view>
+
+   <view class="figure">
+   <view class="box">
+    <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/进行中.png" style="width:100rpx;height: 100rpx;"></image>
+   </view>
+   <view class="state">进行中</view>
+   <view class="num">2</view>
+   </view>
+
+   <view class="figure">
+   <view class="box">
+    <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/结束.png" style="width:100rpx;height: 100rpx;"></image>
+   </view>
+   <view class="state">已完成</view>
+   <view class="num">8</view>
+   </view>
+</view>
+</view>
+
+
+<!-- 功能条 -->
+<view class="other_box">
+ <view class="other">
+ <view class="xtitle">其他功能</view>
+
+  <navigator url="../my_activity/my_activity">
+  <view class="aq">
+    <image class="icon" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/活动 想去.png"></image>
+    <view class="nav">我的活动</view>
+    <image class="arrow" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/arrow_black.png"></image>
+  </view>
+</navigator>
+
+<navigator url="../team/team_login/team_login">
+  <view class="aq">
+    <image class="icon" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/奖惩管理.png"></image>
+    <view class="nav">团队平台</view>
+    <image class="arrow" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/arrow_black.png"></image>
+  </view>
+</navigator>
+
+<navigator url="../organization/org_login/org_login">
+  <view class="aq">
+    <image class="icon" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/奖惩管理.png"></image>
+    <view class="nav">管理员中心</view>
+    <image class="arrow" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/arrow_black.png"></image>
+  </view>
+</navigator>
+
+<navigator url="../white/white">
+  <view class="aq">
+    <image class="icon" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/我的反馈.png"></image>
+    <view class="nav">问题反馈</view>
+    <image class="arrow" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/arrow_black.png"></image>
+  </view>
+</navigator>
+ </view>
+</view>
+

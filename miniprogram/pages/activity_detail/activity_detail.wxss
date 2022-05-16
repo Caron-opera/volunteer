@@ -1,0 +1,88 @@
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 100%;
+    height: 500rpx;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 300rpx;
+    background-color: white;
+    font-size: 30rpx;
+    border-radius: 30rpx;
+    margin-top: 15rpx;
+    margin-bottom: 15rpx;
+}
+.name{
+    font-size: 35rpx;
+    font-weight: 900;
+}
+.smallcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 200rpx;
+    border-radius: 30rpx;
+    padding-left: 10rpx;
+    background-color: #f1eeee;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80rpx;
+    background-color: white;
+}
+.bbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.basic {
+    width: 90%;
+    /* height: 1200rpx; */
+    background-color: white;
+    border-radius: 30rpx;
+    box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.15);
+    padding-left: 30rpx;
+}
+.basic .name{
+    display: flex;
+    align-self: center;
+    font-size: large;
+    justify-content: center;
+    font-weight: 100;  
+}
+.base{
+    display: flex;
+    width: 100%;
+    height: 150rpx;
+    justify-content: center;
+    text-align: end;
+    font-size: small;
+    color: #afb0b3;
+  }
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 98rpx;
+    position: fixed;
+    bottom: 0;
+    background-color: #abb5e4;
+}

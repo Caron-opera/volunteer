@@ -1,0 +1,62 @@
+<form bindsubmit="submit">
+<view class="box">
+  <view class="pic_box">
+    <view class="pic">
+      <view>活动宣传照片：</view>
+       <image src="{{src}}"></image>
+    </view>
+    <view class="icon">
+      <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/删除.png" bindtap="delete"  data-src="{{img}}"></image>
+      <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/拍照.png" bindtap="upload_img"></image>
+    </view>
+  </view>
+  <view class="line"></view>
+
+  <view class="team">
+    <view>负责团队：</view>
+    <input placeholder="请填入负责团队" name="team" value="{{team}}"></input>
+  </view>
+  <view class="team_ID">
+    <view>负责团队ID：</view>
+    <input placeholder="请填入负责团队ID" name="team_ID" value="{{team_ID}}"></input>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="name">
+    <view>活动名称：</view>
+    <input placeholder="请输入活动名称（不超过10个字）" name="name" value="{{name}}"></input>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="start_time">
+    <view>活动开始时间：</view>
+    <input placeholder="例：2022-04-15" name="start_time" value="{{start_time}}"></input>
+  </view>
+  <view class="end_time">
+    <view>活动结束时间：</view>
+    <input placeholder="例：2022-04-15" name="end_time" value="{{end_time}}"></input>
+  </view>
+
+  <view class="line"></view>
+  
+  <view class="start_signtime">
+    <view>活动报名开始时间：</view>
+    <input placeholder="例：2022-04-15" name="start_signtime" value="{{start_signtime}}"></input>
+  </view>
+  <view class="end_signtime">
+    <view>活动报名结束时间：</view>
+    <input placeholder="例：2022-04-15" name="end_signtime" value="{{end_signtime}}"></input>
+  </view>
+
+  <view class="num">
+    <view>招募人数</view>
+    <input placeholder="仅输入数字" name="num" value="{{all_num}}"></input>
+  </view>
+
+  <view class="line"></view>
+  <button form-type="submit" type="primary" class="update">提交</button>
+  <button bindtap="delete" type="primary">删除</button>
+</view>
+</form>

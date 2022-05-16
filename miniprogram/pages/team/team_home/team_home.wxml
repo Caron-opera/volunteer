@@ -1,0 +1,97 @@
+<!-- 团队基本情况 -->
+<view class="mess">
+  <view class="basic">
+  <view class="left">
+    {{team.name}}
+  </view>
+  <view class="right">
+    <view>团队账号：{{team.team_loginid}}</view>
+    <view>负责人：{{team.leader}}</view>
+    <view>联系电话：{{team.phone}}</view>
+  </view>
+  </view>
+  <view class="repair">
+    <navigator  url="../team_update/team_update">
+   <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/修改.png" style="width: 80rpx;height: 80rpx;"></image>
+  </navigator>
+  </view>
+</view>
+
+<!-- 活动统计 -->
+<view class="statistics_box">
+<view class="statistics">
+   <view class="figure">
+   <view class="box">
+    <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/报名.png" style="width:120rpx;height: 120rpx;"></image>
+   </view>
+    <view class="state">活动人次</view>
+     <view class="num">129</view>
+   </view>
+
+   <view class="figure">
+   <view class="box">
+    <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/进行中.png" style="width:80rpx;height: 80rpx;"></image>
+   </view>
+   <view class="state">进行中</view>
+   <view class="num">2</view>
+   </view>
+
+   <view class="figure">
+   <view class="box">
+    <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/结束.png" style="width:80rpx;height: 80rpx;"></image>
+   </view>
+   <view class="state">已完成</view>
+   <view class="num">8</view>
+   </view>
+</view>
+</view>
+
+
+<!-- 功能条 -->
+<view class="other_box">
+ <view class="other">
+ <view class="xtitle">其他功能</view>
+
+  <navigator url="../team_home/team_home">
+  <view class="aq">
+    <image class="icon" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/活动 想去.png"></image>
+    <view class="nav">津贴申请</view>
+    <image class="arrow" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/arrow_black.png"></image>
+  </view>
+</navigator>
+
+<navigator url="../team_home/team_home">
+  <view class="aq">
+    <image class="icon" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/奖惩管理.png"></image>
+    <view class="nav">奖惩管理</view>
+    <image class="arrow" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/arrow_black.png"></image>
+  </view>
+</navigator>
+
+<navigator url="../team_home/team_home">
+  <view class="aq">
+    <image class="icon" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/我的反馈.png"></image>
+    <view class="nav">问题反馈</view>
+    <image class="arrow" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/arrow_black.png"></image>
+  </view>
+</navigator>
+ </view>
+</view>
+
+<!-- 模拟tabbar部分 -->
+<view class="tabbar">
+   <view class="sbox" bindtap="navToassign">
+    <image class="img" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/tabbar/team/活动管理灰.png"></image>
+    <view class="font">活动管理</view>
+   </view>
+
+    <view class="sbox" bindtap="navTomate">
+      <image class="img" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/tabbar/team/人员管理灰.png"></image>
+      <view class="font">人员管理</view>
+    </view>
+
+    <view class="sbox" bindtap="navToteam">
+      <image class="img" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/tabbar/team/团队管理紫.png"></image>
+      <view class="font">团队中心</view>
+    </view>
+</view>

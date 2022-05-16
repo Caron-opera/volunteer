@@ -1,0 +1,27 @@
+<view class="title">活动人员</view>
+<!-- 活动列表 -->
+<view class="person">
+   <block wx:for="{{volunteer}}" wx:key="_id">
+    <navigator class="person_box" url="../assign_content/assign_content?volunteer_openid={{item._openid}}&activity_id={{item.activity_id}}&nickname={{item.nickname}}"> 
+        <view class="left">
+          <image src="{{item.avatarurl}}"></image>
+        </view>
+        <view class="right">
+          <view class="nickname">
+            <view>{{item.nickname}}</view>
+            <view>{{item.age}}岁</view>
+          </view>
+          <view class="skill_box">
+            <block wx:for="{{item.skill}}" wx:key="index">
+             <view class="skill">{{item}}</view>
+            </block>
+          </view>
+          <view class="phone">联系方式:{{item.phone}}</view>
+          <view></view>
+        </view>
+    </navigator>
+   </block>
+</view>
+
+<!-- 底座 -->
+<view class="base">没有了，已经到底了</view>

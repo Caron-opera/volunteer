@@ -1,0 +1,82 @@
+<scroll-view scroll-y="true">
+<form bindsubmit="submit">
+<view class="box">
+  <view class="pic_box">
+    <view class="pic">
+      <view>活动宣传照片：</view>
+       <image src="{{img}}"></image>
+    </view>
+    <view class="icon">
+      <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/删除.png" bindtap="delete"  data-src="{{img}}"></image>
+      <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/拍照.png" bindtap="upload_img"></image>
+    </view>
+  </view>
+  <view class="line"></view>
+
+  <view class="team">
+    <view>负责团队：</view>
+    <input placeholder="请填入负责团队" name="team"></input>
+  </view>
+  <view class="team_ID">
+    <view>负责团队ID：</view>
+    <input placeholder="请填入负责团队ID" name="team_ID"></input>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="name">
+    <view>活动名称：</view>
+    <input placeholder="请输入活动名称（不超过10个字）" name="name" value="{{name}}"></input>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="start_time">
+    <view>活动开始时间：</view>
+    <input placeholder="例：2022-04-15" name="start_time"></input>
+  </view>
+  <view class="end_time">
+    <view>活动结束时间：</view>
+    <input placeholder="例：2022-04-15" name="end_time"></input>
+  </view>
+
+  <view class="line"></view>
+  
+  <view class="start_signtime">
+    <view>活动报名开始时间：</view>
+    <input placeholder="例：2022-04-15" name="start_signtime"></input>
+  </view>
+  <view class="end_signtime">
+    <view>活动报名结束时间：</view>
+    <input placeholder="例：2022-04-15" name="end_signtime"></input>
+  </view>
+
+  <view class="num">
+    <view>招募人数</view>
+    <input placeholder="仅输入数字" name="num"></input>
+  </view>
+
+  <view class="line"></view>
+  <button form-type="submit" type="primary" class="update">提交</button>
+</view>
+</form>
+</scroll-view>
+
+<!-- 模拟tabbar部分 -->
+<view class="tabbar">
+   <view class="sbox" bindtap="navTotask">
+    <image class="img" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/tabbar/organization/活动管理灰.png"></image>
+    <view class="font">活动管理</view>
+   </view>
+
+    <view class="sbox" bindtap="navToup">
+      <image class="img" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/tabbar/organization/添加紫.png"></image>
+      <view class="font">添加</view>
+    </view>
+
+    <view class="sbox" bindtap="navToteam">
+      <image class="img" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/tabbar/organization/团队管理灰.png"></image>
+      <view class="font">团队管理</view>
+    </view>
+
+</view>

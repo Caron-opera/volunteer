@@ -1,0 +1,23 @@
+<view class="title">任务信息</view>
+<view class="activity_name">
+  <view>活动名称：</view>
+  <view class="ac">{{activity_name}}</view>
+</view>
+
+<view class="activity_name">
+  <view>任务接受者：</view>
+  <view class="ac">{{nickname}}</view>
+</view>
+
+<view class="activity_name">
+  <view>任务发送团队：</view>
+  <view class="ac">{{team_name}}</view>
+</view>
+
+<form bindsubmit="submit">
+<view class="content">
+   <view>任务内容：</view>
+  <input placeholder="输入要任务内容（包括时间地点）" name="content"></input>
+</view>
+<button form-type="submit" type="primary" class="update">提交</button>
+</form>

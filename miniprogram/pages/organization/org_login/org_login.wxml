@@ -1,0 +1,17 @@
+<view class="tongyi">
+<image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/mini.jpg"style="width:200rpX;height:600rpx;"></image>
+<form class="login" bindsubmit="formsubmit">
+<view class="login_1">
+<image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/self_black.png"></image>
+<input name="zhanghu" placeholder="请输入管理人员ID"></input>
+</view>
+<view class="line"></view>
+<view class="login_1">
+<image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/password_black.png" ></image>
+<input name="pwd" placeholder="请输入ID密码" password="true"></input>
+</view>
+<view class="line"></view>
+<button form-type="submit" style="background-color: #ff6801;color: #fff; margin-top: 40rpx;">登陆</button>
+</form>
+</view>
+<view class="foot">该系统仅供管理人员使用</view>

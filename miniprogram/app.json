@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/authorization/authorization",
+    "pages/start/start",
+    "pages/activity/activity",
+    "pages/activity_detail/activity_detail",
+    "pages/my_activity/my_activity",
+    "pages/home/home",
+    "pages/repair/repair",
+    "pages/white/white",
+    "pages/task/task",
+    "pages/team/team_login/team_login", 
+    "pages/team/team_home/team_home",
+    "pages/team/team_update/team_update",
+    "pages/team/teammate/teammate",
+    "pages/team/assignment/assignment",
+    "pages/team/assignment_list/assignment_list",
+    "pages/team/assign_people/assign_people",
+    "pages/team/assign_content/assign_content",
+    "pages/organization/org_login/org_login",
+    "pages/organization/up/up",
+    "pages/organization/org_task/org_task",
+    "pages/organization/org_team/org_team",
+    "pages/organization/org_team_up/org_team_up",
+    "pages/organization/org_team_update/org_team_update",
+    "pages/organization/org_task_update/org_task_update"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/start/start",
+        "text": "首页",
+        "iconPath": "./images/tabBar/首页灰.png",
+        "selectedIconPath": "./images/tabBar/首页紫.png"
+      },
+      {
+        "pagePath": "pages/activity/activity",
+        "text": "活动列表",
+        "iconPath": "./images/tabBar/列表灰.png",
+        "selectedIconPath": "./images/tabBar/列表紫.png"
+      },
+      {
+        "pagePath": "pages/task/task",
+        "text": "任务信息",
+        "iconPath": "./images/tabBar/任务灰.png",
+        "selectedIconPath": "./images/tabBar/任务紫.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "我的",
+        "iconPath": "./images/tabBar/个人灰.png",
+        "selectedIconPath": "./images/tabBar/个人紫.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "社区疫情志愿信息平台",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

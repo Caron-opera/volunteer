@@ -1,0 +1,32 @@
+<form bindsubmit="submit">
+<view class="box">
+  <view class="name">
+    <view>团队名：</view>
+    <input placeholder="请输入修改的团队名" name="name" value="{{team.name}}"></input>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="password">
+    <view>登录密码：</view>
+    <input placeholder="请输入修改后的登录密码" name="password" value="{{team.password}}"></input>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="leader">
+    <view>负责人：</view>
+    <input placeholder="请输入修改的负责人" name="leader" value="{{team.leader}}"></input>
+  </view>
+
+  <view class="line"></view>
+  
+  <view class="phone">
+    <view>联系方式：</view>
+    <input placeholder="请输入手机号码" name="phone" value="{{team.phone}}"></input>
+  </view>
+
+  <view class="line"></view>
+  <button form-type="submit" type="primary" class="update">修改</button>
+</view>
+</form>

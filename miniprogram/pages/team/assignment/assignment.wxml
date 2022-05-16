@@ -1,0 +1,48 @@
+<view class="title">活动列表</view>
+<scroll-view scroll-y="true">
+<view class="box">
+<!-- 活动列表 -->
+<view class="act_bigbox">
+   <block wx:for="{{activity}}" wx:key="_id">
+    <view class="activity_box"> 
+      <view class="top">
+        <view class="left">
+          <image src="{{item.src}}"></image>
+        </view>
+        <view class="right">
+          <view>{{item.name}}</view>
+          <view class="state">{{item.state}}</view>
+          <view>报名时间:{{item.start_signtime}}至{{item.end_signtime}}</view>
+          <view>活动时间:{{item.start_time}}至{{item.end_time}}</view>
+        </view>
+      </view>
+      <view class="bottom">
+        <navigator class="task_list" url="../assignment_list/assignment_list?id={{item._id}}">任务管理</navigator>
+        <navigator class="task_list" url="../assign_people/assign_people?id={{item._id}}">成员管理</navigator>
+        <view class="over" bindtap="over" data-id="{{item._id}}">结束任务</view>
+      </view>
+    </view>
+   </block>
+</view>
+
+<!-- 底座 -->
+<view class="base">没有了，已经到底了</view>
+</view></scroll-view>
+<!-- 模拟tabbar部分 -->
+<view class="tabbar">
+   <view class="sbox" bindtap="navToassign">
+    <image class="img" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/tabbar/team/活动管理紫.png"></image>
+    <view class="font">活动管理</view>
+   </view>
+
+    <view class="sbox" bindtap="navTomate">
+      <image class="img" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/tabbar/team/人员管理灰.png"></image>
+      <view class="font">人员管理</view>
+    </view>
+
+    <view class="sbox" bindtap="navToteam">
+      <image class="img" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/tabbar/team/团队管理灰.png"></image>
+      <view class="font">团队中心</view>
+    </view>
+</view>
+

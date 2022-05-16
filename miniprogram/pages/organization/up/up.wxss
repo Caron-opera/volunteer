@@ -1,0 +1,63 @@
+
+.pic_box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: white;
+}
+.pic_box .pic {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  /* background-color: green; */
+  height: 160rpx;
+}
+.pic_box .pic image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 10rpx;
+}
+.pic_box .icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  /* background-color: pink; */
+}
+.pic_box .icon image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.team {
+  background-color: #fff;
+}
+.team_ID {
+  background-color: #fff;
+}
+.name {
+  background-color: #fff;
+}
+.start_time {
+  background-color: #fff;
+}
+.end_time {
+  background-color: #fff;
+}
+.start_signtime {
+  background-color: #fff;
+}
+.end_signtime {
+  background-color: #fff;
+}
+.num {
+  background-color: #fff;
+}
+.line {
+  background-color: #fff;
+}
+button {
+  margin-top: 40rpx;
+  margin-bottom: 300rpx;
+}

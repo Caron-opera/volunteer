@@ -1,0 +1,64 @@
+.page{
+  background-color:  #7e7b7b;
+}
+/* 搜索框 */
+.title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 45rpx;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+}
+.task_box{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80rpx;
+}
+.task {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 400rpx;
+  background-color: #fff;
+  border-top: 1px solid #bebcbc;
+  border-bottom: 1px solid #bebcbc;
+  /* background-color: rgb(240, 234, 245); */
+}
+
+.task .basic {
+  width: 70%;
+  height: 400rpx;
+  /* background-color: purple; */
+}
+.task .basic .name {
+  font-size: smaller;
+  color: rgb(95, 101, 156);
+}
+.task .basic .content{
+  font-size: large;
+  color: rgb(212, 129, 129);
+}
+.task .act_box {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  /* background-color: pink; */
+}
+.task .act {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200rpx;
+  background-color: salmon;
+  color: white;
+  font-size: larger;
+  font-weight: 600;
+  border-radius: 60rpx;
+}

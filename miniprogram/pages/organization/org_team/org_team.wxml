@@ -1,0 +1,46 @@
+
+<!-- 搜索框 -->
+<view class="search">
+ <view class="search_input">
+     <input placeholder="请输入要搜索的模块"></input>
+     <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/search_black.png"></image>
+  </view>
+  <navigator class="add" url="../org_team_up/org_team_up">
+    <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/添加紫.png"></image>
+  </navigator>
+</view>
+<scroll-view scroll-y="true">
+<view class="box">
+<!-- 活动列表 -->
+<view class="team_bigbox">
+   <block wx:for="{{team}}" wx:key="_id">
+    <navigator class="team_box" url="../org_team_update/org_team_update?id={{item._id}}"> 
+     <view class="name">{{item.name}}</view>
+     <view class="leader">负责人：{{item.leader}}</view>
+     <view class="phone">负责人电话：{{item.phone}}</view>
+    </navigator>
+   </block>
+</view>
+<!-- 底座 -->
+<view class="base">没有了，已经到底了</view>
+</view>
+</scroll-view>
+
+<!-- 模拟tabbar部分 -->
+<view class="tabbar">
+   <view class="sbox" bindtap="navTotask">
+    <image class="img" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/tabbar/organization/活动管理灰.png"></image>
+    <view class="font">活动管理</view>
+   </view>
+
+    <view class="sbox" bindtap="navToup">
+      <image class="img" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/tabbar/organization/添加灰.png"></image>
+      <view class="font">添加</view>
+    </view>
+
+    <view class="sbox" bindtap="navToteam">
+      <image class="img" src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/tabbar/organization/团队管理紫.png"></image>
+      <view class="font">团队管理</view>
+    </view>
+
+</view>

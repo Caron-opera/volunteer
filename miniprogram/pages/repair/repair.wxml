@@ -1,0 +1,45 @@
+<form bindsubmit="submit">
+<view class="box">
+  <view class="pic_box">
+   <view class="pic">
+    <view>头像：</view>
+    <image src="{{avatarurl}}"></image>
+   </view>
+  <view class="icon">
+      <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/删除.png" bindtap="delete"  data-avatarurl="{{avatarurl}}"></image>
+      <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/拍照.png" bindtap="upload_img"></image>
+  </view>
+  </view>
+  <view class="line"></view>
+  <view class="nickname">
+    <view>昵称：</view>
+    <input placeholder="请输入修改的昵称" name="nickname" value="{{nickname}}"></input>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="age">
+    <view>年龄：</view>
+    <input placeholder="请输入修改的年龄（仅填数字）" name="age" value="{{age}}"></input>
+  </view>
+
+  <view class="line"></view>
+  
+  <view class="phone">
+    <view>手机号码：</view>
+    <input placeholder="请输入手机号码" name="phone" value="{{phone}}"></input>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="skill">
+    <view>技能一：</view>
+    <input placeholder="不超过3个字" name="skill1" value="{{skill[0]}}"></input>
+    <view>技能二：</view>
+    <input placeholder="不超过3个字" name="skill2" value="{{skill[1]}}"></input>
+  </view>
+
+  <view class="line"></view>
+  <button form-type="submit" type="primary" class="update">提交</button>
+</view>
+</form>
