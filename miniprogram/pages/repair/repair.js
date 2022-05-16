@@ -110,7 +110,7 @@ delete: function(e){
               wx.showToast({
                 title: '提交成功',
               })
-              wx.redirectTo({
+              wx.switchTab({
                 url: '../home/home',
               })
           }

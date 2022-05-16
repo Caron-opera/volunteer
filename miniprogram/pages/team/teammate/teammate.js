@@ -40,7 +40,7 @@ Page({
         team_loginid:that.data.team_loginid,
         situation:'已通过',
       },success:function(res){
-        wx:wx.switchTab({
+        wx:wx.redirectTo({
           url: '../teammate/teammate',
         })
       }
@@ -61,7 +61,7 @@ Page({
         team_loginid:that.data.team_loginid,
         situation:'未通过',
       },success:function(res){
-        wx:wx.switchTab({
+        wx:wx.redirectTo({
           url: '../teammate/teammate',
         })
       }
@@ -75,16 +75,17 @@ Page({
     wx.getStorage({
       key: 'teamID',
       success(res) {
-        that.setData({
-          team_loginid:res.data
-        })
+        console.log(res.data)
+        // that.setData({
+        //   team_loginid:res.data
+        // })
         wx.cloud.callFunction({
-          name:'connect',
+          name:'voact-volunteer',
           data: {
-            team_loginid:that.data.team_loginid
+            team_loginid:res.data
           }
         }).then(res => {
-          console.log(res.result.list)
+          console.log(res.result)
           that.setData({
             message:res.result.list
           })

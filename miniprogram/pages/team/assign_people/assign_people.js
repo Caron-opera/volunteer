@@ -17,7 +17,7 @@ Page({
     let that = this
     console.log(options.id)
     wx.cloud.callFunction({
-      name:'lookup',
+      name:'voact-vol',
       data: {
         activity_id: options.id
       }

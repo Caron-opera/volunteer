@@ -23,7 +23,7 @@ Page({
     .remove({
       success(res){
         console.log('删除成功',res.data)
-        wx.switchTab({
+        wx.redirectTo({
           url: '../assignment/assignment',
         })
     }
@@ -39,7 +39,7 @@ Page({
     })
     console.log(that.data.activity_id)
     wx.cloud.callFunction({
-      name:'contact',
+      name:'task-vol',
       data: {
           activity_id:that.data.activity_id
       }

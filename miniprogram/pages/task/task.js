@@ -17,12 +17,12 @@ Page({
       id:e.target.dataset.id
     })
     db.collection('task')
-    .where({_id:id})
+    .where({_id:that.id})
     .update({
       data:{
-        task_situation:'完成@@@',
+        task_situation: '完成@@@'
       },success(res){
-        console.log('----')
+        console.log(res)
       }
     })
   },

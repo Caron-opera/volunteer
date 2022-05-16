@@ -27,7 +27,7 @@ Page({
                 wx.showToast({
                   title: '提交成功',
                 })
-                wx.switchTab({
+                wx.redirectTo({
                   url: '../assignment/assignment',
                 })
             }
