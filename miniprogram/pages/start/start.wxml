@@ -43,7 +43,7 @@
 <view class="box">
    <view class="mess">
     <view class="title_box">
-      <view>紧急通知</view>
+      <view>通知</view>
       <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/喇叭.png" style="width: 50rpx;height: 50rpx;"></image>
     </view>
     <view class="content">自4月26日以来有郑州市、广东白云区、上海等中高风险区旅游史的相关人员尽快上报社区。</view>
