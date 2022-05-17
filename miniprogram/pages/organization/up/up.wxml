@@ -51,9 +51,23 @@
     <input placeholder="例：2022-04-15" name="end_signtime"></input>
   </view>
 
+  <view class="line"></view>
   <view class="num">
     <view>招募人数</view>
     <input placeholder="仅输入数字" name="all_num"></input>
+  </view>
+
+  <view class="line"></view>
+  <view class="request">
+    <view>招募要求</view>
+    <textarea class="input" placeholder="仅输入招募要求" name="request" auto-focus="true" ></textarea>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="detail">
+    <view>活动详情</view>
+    <textarea class="input" placeholder="请输入活动细节" name="detail" auto-focus="true" ></textarea>
   </view>
 
   <view class="line"></view>

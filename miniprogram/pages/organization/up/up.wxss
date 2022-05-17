@@ -54,9 +54,13 @@
 .num {
   background-color: #fff;
 }
-.line {
+.request {
   background-color: #fff;
 }
+.detail {
+  background-color: #fff;
+}
+
 button {
   margin-top: 40rpx;
   margin-bottom: 300rpx;

@@ -88,10 +88,10 @@ delete: function(e){
         team: e.detail.value.team,
         team_loginid: e.detail.value.team_ID,
         state: '报名中',
-        // detail: e.detail.value.detail,
-        detail: '活动详情',
-        // request: e.detail.value.request,
-        request: '活动要求',
+        detail: e.detail.value.detail,
+        // detail: '活动详情',
+        request: e.detail.value.request,
+        // request: '活动要求',
         num: '0'
       },
       success:function(res){

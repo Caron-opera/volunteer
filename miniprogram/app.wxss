@@ -50,6 +50,7 @@ button::after {
   flex-direction: column;
   width: 100%;
   overflow: scroll;
+  margin-bottom: 200rpx;
 }
 .title{
   display: flex;
