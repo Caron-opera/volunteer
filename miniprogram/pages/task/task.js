@@ -33,7 +33,7 @@ Page({
     })
     // .update({
     //   data:{
-    //     task_situation: '完成@@@'
+    //     task_situation: '完成'
     //   },success(res){
     //     console.log(res)
     //   }

@@ -1,43 +1,6 @@
-/* 引入 weui 组件 */
-@import './miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss';
 
-page {
-  --footer-height: 10vh;
-  --button-size: 16vw;
-  --button-color: #353535;
-  --button-icon-size: 6vw;
-}
-
-page {
-  background: #f6f6f6;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
-button {
-  background: initial;
-}
-
-button:focus {
-  outline: 0;
-}
-
-button::after {
-  border: none;
-}
-
-.page{
-  background-color:  #7e7b7b;
+page{
+  background-color:  #f5efef;
 }
 .line{
   width: 100%;

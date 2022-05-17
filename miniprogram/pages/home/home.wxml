@@ -25,7 +25,7 @@
 <view class="statistics_box">
 <view class="statistics">
    <view class="figure">
-   <view class="box">
+   <view class="xbox">
     <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/报名.png" style="width:140rpx;height: 140rpx;"></image>
    </view>
    <view class="state">已报名</view>
@@ -33,7 +33,7 @@
    </view>
 
    <view class="figure">
-   <view class="box">
+   <view class="xbox">
     <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/进行中.png" style="width:100rpx;height: 100rpx;"></image>
    </view>
    <view class="state">进行中</view>
@@ -41,7 +41,7 @@
    </view>
 
    <view class="figure">
-   <view class="box">
+   <view class="xbox">
     <image src="cloud://cloud1-9g9obnl0afaae9cb.636c-cloud1-9g9obnl0afaae9cb-1311278714/image/icon/结束.png" style="width:100rpx;height: 100rpx;"></image>
    </view>
    <view class="state">已完成</view>
