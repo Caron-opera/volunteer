@@ -12,7 +12,7 @@
             <view>执行情况：{{item.task_situation}}</view>
          </view>
          <view class="right">
-          <button  bindtap="delete" data-id="{{item._id}}">删除任务</button>
+          <button bindtap="overTask" data-id="{{item._id}}">删除任务</button>
          </view>
       </view>
    </block>

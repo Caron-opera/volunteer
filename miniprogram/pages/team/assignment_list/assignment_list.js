@@ -1,5 +1,6 @@
 const db = wx.cloud.database()
 const _ = db.command
+
 Page({
 
   /**
@@ -10,24 +11,15 @@ Page({
     activity_id:'',
     task_id:''
   },
-  delete:function(e){
+  overTask:function(e){
     let that = this 
-    that.setData({
-      task_id:e.currentTarget.dataset.id
-    })
     console.log(that.data.task_id)
-    db.collection('task')
-    .where({
-      _id:that.data.task_id
+    db.collection('activity')
+    .get({
+      success: function(res) {
+        console.log(res.data)
+      }
     })
-    .remove({
-      success(res){
-        console.log('删除成功',res.data)
-        wx.redirectTo({
-          url: '../assignment/assignment',
-        })
-    }
-  })
   },
   /**
    * 生命周期函数--监听页面加载

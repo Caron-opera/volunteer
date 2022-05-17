@@ -15,6 +15,9 @@ Page({
     onLoad: function (options) {
         let that =this
         db.collection('activity')
+        .where({
+            state: _.neq('已结束')
+        })
         .get({
             success:function(res){
                 console.log('活动获取成功',res)        
