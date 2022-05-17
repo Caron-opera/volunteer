@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    img:''
+    img: '',
   },
   // tabbar功能逻辑
   navToteam: function(){
@@ -71,6 +71,7 @@ delete: function(e){
       },
   })
 },
+
   /**
    * 生命周期函数--监听页面加载
    */

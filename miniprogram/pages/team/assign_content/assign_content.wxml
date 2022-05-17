@@ -1,5 +1,5 @@
 <view class="title">任务信息</view>
-<view class="activity_name">
+<view class="activity_name" style="margin-top: 40px">
   <view>活动名称：</view>
   <view class="ac">{{activity_name}}</view>
 </view>

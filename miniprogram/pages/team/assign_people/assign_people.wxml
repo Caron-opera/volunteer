@@ -1,6 +1,6 @@
 <view class="title">活动人员</view>
 <!-- 活动列表 -->
-<view class="person">
+<view class="person" style="margin-top: 40px">
    <block wx:for="{{volunteer}}" wx:key="_id">
     <navigator class="person_box" url="../assign_content/assign_content?volunteer_openid={{item._openid}}&activity_id={{item.activity_id}}&nickname={{item.nickname}}"> 
         <view class="left">
