@@ -1,7 +1,8 @@
 <view class="title">活动申请通知</view>
 <scroll-view scroll-y="true">
 <view class="box">
-<view class="mess_box">
+<view class="mess_box" style="margin-top: 40px">
+  <view wx:if="{{message.length == 0}}">暂无数据</view>
   <block wx:for="{{message}}" wx:key="{{_id}}" wx:if="{{item.situation=='审核中'}}">
      <view class="mess">
       <view class="top">
