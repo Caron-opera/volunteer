@@ -1,10 +1,11 @@
 .page{
   background-color:  #7e7b7b;
 }
-.box{
+.xbox{
    display: flex;
    align-items: center;
    justify-content: center;
+   align-self: center;
 }
 /* 搜索框 */
 .search {

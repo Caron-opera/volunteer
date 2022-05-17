@@ -40,7 +40,7 @@
 
 
 <!-- 公告 -->
-<view class="box">
+<view class="xbox">
    <view class="mess">
     <view class="title_box">
       <view>通知公告</view>
