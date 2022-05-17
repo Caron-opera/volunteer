@@ -69,9 +69,41 @@ delete: function(e){
       fail:err=>{
           // handle error
       },
-  })
-},
-
+    })
+  },
+  // 提交表单
+  submit: function(e) {
+    let that = this
+    console.log(e.detail.value)
+    console.log(that.data.img)
+    db.collection('activity').add({
+      data: {
+        all_num: e.detail.value.all_num,
+        start_time: e.detail.value.start_time,
+        start_signtime: e.detail.value.start_signtime,
+        end_time: e.detail.value.end_time,
+        end_signtime: e.detail.end_signtime,
+        name: e.detail.value.name,
+        src: that.data.img,
+        team: e.detail.value.team,
+        team_loginid: e.detail.value.team_ID,
+        state: '报名中',
+        // detail: e.detail.value.detail,
+        detail: '活动详情',
+        // request: e.detail.value.request,
+        request: '活动要求',
+        num: '0'
+      },
+      success:function(res){
+        wx.showToast({
+          title: '添加活动成功',
+        })
+        wx.redirectTo({
+          url: '../org_task/org_task',
+        })
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

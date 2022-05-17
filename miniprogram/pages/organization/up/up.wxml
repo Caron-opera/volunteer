@@ -53,7 +53,7 @@
 
   <view class="num">
     <view>招募人数</view>
-    <input placeholder="仅输入数字" name="num"></input>
+    <input placeholder="仅输入数字" name="all_num"></input>
   </view>
 
   <view class="line"></view>
