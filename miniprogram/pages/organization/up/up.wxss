@@ -54,6 +54,9 @@
 .num {
   background-color: #fff;
 }
+.site {
+    background-color: #fff;
+}
 .request {
   background-color: #fff;
 }

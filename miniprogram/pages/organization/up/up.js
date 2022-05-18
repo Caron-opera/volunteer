@@ -87,6 +87,7 @@ delete: function(e){
         src: that.data.img,
         team: e.detail.value.team,
         team_loginid: e.detail.value.team_ID,
+        site: e.detail.value.site,
         state: '报名中',
         detail: e.detail.value.detail,
         // detail: '活动详情',

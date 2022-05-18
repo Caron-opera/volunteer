@@ -58,6 +58,12 @@
   </view>
 
   <view class="line"></view>
+  <view class="site">
+    <view>地址</view>
+    <input placeholder="输入地址" name="site"></input>
+  </view>
+
+  <view class="line"></view>
   <view class="request">
     <view>招募要求</view>
     <textarea class="input" placeholder="仅输入招募要求" name="request" auto-focus="true" ></textarea>

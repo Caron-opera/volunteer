@@ -14,30 +14,9 @@ Page({
     let that = this
     console.log(e.target.dataset.id)
     that.setData({
-      id: e.target.dataset.id
+      id:e.target.dataset.id
     })
-    // wx.cloud.callFunction({
-    //   name:'finishTask',
-    //   data: {
-    //       id: that.id
-    //   }
-    // })
-    db.collection('task')
-    .where({
-        _id: e.target.dataset.id
-      })
-    .get({
-      success: function(res) {
-        console.log(res)
-      }
-    })
-    // .update({
-    //   data:{
-    //     task_situation: '完成'
-    //   },success(res){
-    //     console.log(res)
-    //   }
-    // })
+    console.log(that.data.id)
   },
   /**
    * 生命周期函数--监听页面加载
